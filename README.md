@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Akinai
 
-Things you may want to cover:
+## サイト概要
 
-* Ruby version
 
-* System dependencies
+### サイトテーマ
 
-* Configuration
+### テーマを選んだ理由
 
-* Database creation
 
-* Database initialization
+### ターゲットユーザ
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 主な利用シーン
