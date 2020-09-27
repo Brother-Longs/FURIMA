@@ -13,6 +13,83 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
 @import "bootstrap";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	color: black;
+}
+a:hover {
+	text-decoration: none;
+}
+
+#head {
+	width: 960px;
+	height: auto;
+	background-color: red;
+	margin: 0 auto;
+}
+.logo span {
+	color: red;
+}
+.logo h1{
+	padding-left: 60px;
+	padding-top: 10px;
+	float: left;
+}
+.search {
+	margin-right: 5%;
+	float: right;
+	padding-top: 15px;
+}
+.global-nav{
+	float: right;
+}
+.global-nav {
+	width: 960px;
+}
+.global-nav i {
+	color: red;
+}
+.nav-item {
+	float: left;
+	font-size: 16px;
+	list-style: none;
+	margin-right: 10px;
+	margin-left: 45px;
+	font-weight: 900;
+	padding: 4px;
+}
+.nav-item1 {
+	float: left;
+	font-size: 16px;
+	list-style: none;
+	margin-right: 280px;
+	font-weight: 900;
+	padding: 5px;
+}
+.nav-item2 {
+	float: left;
+	font-size: 16px;
+	list-style: none;
+	margin-right: 20px;
+	padding: 5px;
+	background-color: rgba(255, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 5px;
+}
+.nav-item3 {
+	float: left;
+	font-size: 16px;
+	list-style: none;
+	margin-right: 25px;
+	margin-left: 45px;
+	padding: 5px;
+	border: 2px solid #00BFFF;
+	color: #00BFFF;
+	border-radius: 5px;
+}
 

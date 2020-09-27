@@ -1,3 +1,99 @@
 // Place all the styles related to the Customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#sign-up {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #F5F5F5;
+	height: 1500px;
+}
+.sign-logo-name {
+	margin-left: 30%;
+	padding: 30px 0px;
+}
+.sing-logo {
+	color: red;
+}
+.sing {
+	width: 700px;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: center;
+}
+.sing-title {
+	border-bottom: 1px solid #F5F5F5;
+	padding: 30px 0px;
+}
+.sing-form {
+	padding-top: 20px;
+	height: auto;
+}
+.field {
+	width: 350px;
+	margin: 0 auto;
+}
+.field p {
+	font-size: 15px;
+	text-align: left;
+	margin-top: 10px;
+}
+.mandatory {
+	background-color: red;
+	color: #fff;
+	padding: 3px;
+	border-radius: 5px;
+}
+.field h6 {
+	text-align: left;
+	margin-top: 50px;
+}
+.confirmation p{
+	font-size: 13px;
+}
+.actions {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#log-in {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #F5F5F5;
+	height: 1500px;
+}
+.login {
+	width: 400px;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: center;
+}
+.login-title {
+	border-bottom: 1px solid #F5F5F5;
+	padding: 30px 0px;
+}
+.login-form {
+	padding-top: 20px;
+	height: auto;
+}
+#log-in button {
+	width: 330px;
+}
+.login-title a {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

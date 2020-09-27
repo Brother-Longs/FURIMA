@@ -69,3 +69,4 @@ gem "paranoia"
 gem 'pry-byebug'
 gem 'ransack'
 gem 'kaminari','~> 1.2.1'
+gem 'active_hash'

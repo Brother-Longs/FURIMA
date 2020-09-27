@@ -1,29 +1,59 @@
-<h2>Sign up</h2>
-
+<div id="sign-up">
+  <div class="sign-logo-name">
+    <h1><a href="/">Akina<span class="sing-logo">_</span>i</a></h1></div>
+  <div class="sing">
+    <div class="sing-title">
+      <h5><b>会員情報入力</b></h5>
+    </div>
+    <div class="sing-form">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <p><b>ニックネーム　</b><span class="mandatory">必須</span></p>
+    <%= f.text_field :nickname, autofocus: true, autocomplete: "nickname",style:"width:350px;height:40px;border:1px solid #DCDCDC;",placeholder:"　例)アキナイ太郎"%>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+    <p><b>メールアドレス　</b><span class="mandatory">必須</span></p>
+    <%= f.email_field :email, autocomplete: "email",style:"width:350px;height:40px;border:1px solid #DCDCDC;",placeholder:"　PC・携帯どちらでも可" %><br />
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <p><b>パスワード　</b><span class="mandatory">必須</span></p>
+    <%= f.password_field :password, autocomplete: "password",style:"width:350px;height:40px;border:1px solid #DCDCDC;",placeholder:"　6文字以上の半角英数字"%><br>
+        <% if @minimum_password_length %>
+      <% end %>
+
+    <div class="confirmation">
+      <h6><b>本人確認</b></h6>
+        <p>
+          安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。他のお客さまに公開されることはありません。
+        </p>
+    </div>
+    <p><b>お名前(全角)　</b><span class="mandatory">必須</span></p>
+    <%= f.text_field :family_name, autofocus: true, autocomplete: "family_name",style:"width:150px;height:40px;border:1px solid #DCDCDC;",placeholder:"　例)商"%>
+    <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name",style:"width:150px;height:40px;border:1px solid #DCDCDC;",placeholder:"　例)太郎"%>
+
+    <p><b>お名前カナ(全角)　</b><span class="mandatory">必須</span></p>
+    <%= f.text_field :family_name_kana, autofocus: true, autocomplete: "family_name_kana",style:"width:150px;height:40px;border:1px solid #DCDCDC;",placeholder:"　例)アキナイ"%>
+    <%= f.text_field :first_name_kana, autofocus: true, autocomplete: "first_name_kana",style:"width:150px;height:40px;border:1px solid #DCDCDC;",placeholder:"　例)タロウ"%>
+
+    <p><b>生年月日　</b><span class="mandatory">必須</span></p>
+    <%= f.text_field :birth_year, autofocus: true, autocomplete: "birth_year",style:"width:80px;height:40px;border:1px solid #DCDCDC;",placeholder:""%> 年 
+    <%= f.text_field :birth_month, autofocus: true, autocomplete: "birth_month",style:"width:80px;height:40px;border:1px solid #DCDCDC;",placeholder:""%> 月 
+    <%= f.text_field :birth_day, autofocus: true, autocomplete: "birth_day",style:"width:80px;height:40px;border:1px solid #DCDCDC;",placeholder:""%> 日 
+  <div class="confirmation">
+        <p>
+          ※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。
+        </p>
+    </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.hidden_field :is_avtive, value: "有効" %>
+        <%= f.submit "登録する" ,class:"btn btn-danger btn-lg",
+          style:"padding:10px;width:310px;font-size:15px;margin-bottom:50px;" %>
   </div>
+  </div>
+ </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
+
