@@ -3,5 +3,4 @@ class Product < ApplicationRecord
   	belongs_to :customer, dependent: :destroy
   	belongs_to :category, dependent: :destroy
   	belongs_to :brand, dependent: :destroy
-  	attachment :travel_image, destroy: false
 end
