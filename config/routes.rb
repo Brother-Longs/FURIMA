@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'buyers/confirm' => "buyers#confirm"
   post 'purchases/pay' => "purchases#pay"
   get 'purchases/done' => "purchases#done"
+  root "products#index"
   
   resources :customers,only: [:show,:edit,:update] do
   	resources :buyers, only: [:new,:create,:edit,:update,:destroy]
