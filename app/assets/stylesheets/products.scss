@@ -3,20 +3,91 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// index page //
 
+//背景色
+.sub-box{
+	background-color: #F9F9F9;
+}
+.iine-main-box{
+	background-color: #F9F9F9;
+	height: 400px;
+}
 
+.iine-box{
+	height: 300px;
+	width: 80%;
+	margin: 20px 200px;
+}
+.subtitle{
+	font-size: 22px;
+	text-align: center;
+}
+.category-name{
+	font-size: 22px;
+	padding: 30px 0px 10px 200px;
+}
+.brand-name{
+	font-size: 22px;
+	padding: 30px 0px 10px 200px;
+}
+.product-view{
+	float: right;
+}
+//ジャンル中身
+.nav-products{
+	margin: 1em;
+	padding: 1em;
+  	border: 1px solid #e0e0e0;
+  	border-radius: 20px;
+}
 
+//ジャンル分け
+.categorys{
+	margin: 0 auto;
+}
+.nav-item{
+	text-align: center;
+}
 
+//出品ボタン
+.new-button{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+.new-button-image{
+	width: 200px
+}
 
+// new page //
 
-
-
-
-
-
-
-
-
-
+.exhibit-box{
+	background-color: #F9F9F9;
+	width: 100%;
+	padding-top: 120px;
+}
+.exhibit-sub-box{
+	background-color: white;
+	width: 50%;
+	margin-left: 25%;
+	padding: 40px 40px 80px 40px;
+}
+.exhibit-title{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.exhibit-text{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.exhibit-explanation{
+	color: gray;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.exhibit-field{
+	width: 40%;
+}
 
 

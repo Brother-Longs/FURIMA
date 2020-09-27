@@ -28,3 +28,100 @@
           </nav>
       </div>
     </header>
+
+<% if customer_signed_in? %>
+	<div class="iine-main-box">
+		<div class="iine-box">
+			<div class="iine-category">
+				いいね！した商品
+			</div>
+			<div class="product-view">
+				すべて見る >
+			</div>
+			<div class="iine-image">
+			</div>
+		</div>
+	</div>
+<% end %>
+
+<div class="category-box">
+	<div class="category-header">
+		<div class="subtitle">
+			人気のカテゴリー
+		</div>
+		<div class="categorys">
+			<ul class="nav">
+		  		<li class="nav-products">
+		    		レディース
+		  		</li>
+		  		<li class="nav-products">
+		    		メンズ
+		  		</li>
+		  		<li class="nav-products">家電・スマホ・カメラ
+		  		</li>
+		  		<li class="nav-products">
+		    		おもちゃ・ホビー・グッズ
+		  		</li>
+			</ul>
+		</div>
+	</div>
+	<div class="sub-box">
+		<div class="category-name">
+			レディース新着アイテム
+		</div>
+		<div class="product-view">
+			すべて見る >
+		</div>
+		<div class="category-product">
+			<div class="product-image">
+			</div>
+			<div class="product-name">
+				Tシャツ
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="brand-box">
+	<div class="brand-header">
+		<div class="subtitle">
+			人気のブランド
+		</div>
+		<div class="brands">
+			<ul class="nav">
+	  			<li class="nav-products">
+	    			シャネル
+	  			</li>
+	  			<li class="nav-products">
+	  				ルイヴィトン
+	  			</li>
+	  			<li class="nav-products">
+	    			シュプリーム
+	  			</li>
+	  			<li class="nav-products">
+	    			ナイキ
+	  			</li>
+			</ul>
+		</div>
+	</div>
+	<div class="sub-box">
+		<div class="brand-name">
+			シャネル新着アイテム
+		</div>
+		<div class="product-view">
+			すべて見る >
+		</div>
+		<div class="brand product">
+			<div class="product-image">
+			</div>
+			<div class="product-name">
+				財布
+			</div>
+		</div>
+	</div>
+</div>
+<div class="new-button">
+	<%= link_to (new_product_path) do %>
+    <img class="new-button-image" src="/assets/カメラマーク.jpg" alt="">
+    <% end %>
+</div>

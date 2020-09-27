@@ -1,0 +1,73 @@
+<div class="exhibit-box">
+	<div class="exhibit-sub-box">
+		<%= form_for(@product) do |f| %>
+			<div class="exhibit-image-box">
+				<div class="exhibit-title">
+					出品画像
+				</div>
+				<p class="exhibit-text">
+					最大10枚までアップロードできます
+				</p>
+			</div>
+			<div class="exhibit-product-box">
+				<div class="exhibit-title">
+					商品名
+				</div>
+				<%= f.text_field :name, style:"width: 100%", placeholder:"40文字まで" %>
+				<div class="exhibit-title">
+					商品の説明
+				</div>
+				<%= f.text_area :description, style:"width: 100%", placeholder:"商品の説明（必須 1,000文字以内
+					（色、素材、重さ、定価、注意点など）
+
+					例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" %>
+			</div>
+			<div class="exhibit-product-detail-box">
+				<div class="exhibit-explanation">
+					商品の詳細
+				</div>
+				<div class="exhibit-title">
+					カテゴリー
+				</div>
+				<div class="exhibit-title">
+					ブランド
+				</div>
+				<div class="exhibit-title">
+					商品の状態
+				</div>
+			</div>
+			<div class="exhibit-shipping-box">
+				<div class="exhibit-explanation">
+					配送について
+				</div>
+				<div class="exhibit-title">
+					配送料の負担
+				</div>
+				<div class="exhibit-title">
+					配送元の地域
+				</div>
+				<div class="exhibit-title">
+					発送までの日数
+				</div>
+			</div>
+			<div class="exhibit-price-box">
+				<div class="exhibit-explanation">
+					価格（¥300〜9,999,999)
+				</div>
+				<div class="exhibit-title">
+					販売価格
+				</div>
+				<%= f.text_field :price, style:"width: 100%" %>
+				<div class="exhibit-text">
+					販売手数料（10%）
+				</div>
+			</div>
+			<div class="exhibit-profit-box">
+				<div class="exhibit-text">
+					販売利益
+				</div>
+			</div>
+			<%= f.submit "出品する", class:"btn btn-primary active" %>
+		<% end %>
+	</div>
+</div>

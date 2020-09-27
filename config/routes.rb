@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post 'purchases/pay' => "purchases#pay"
   get 'purchases/done' => "purchases#done"
   root 'products#index'
+
   resources :customers,only: [:show,:edit,:update] do
   	resources :buyers, only: [:new,:create,:edit,:update,:destroy]
   	resources :cards, only: [:new,:create,:edit,:update,:destroy]
